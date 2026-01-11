@@ -1,5 +1,5 @@
 # churned-prediction-r
-This project is implemented to analyse which variables in the ecommerce dataset have strong effect on the customer's churn situation. Through the analysing procedures, there are some interesting dectections of attributes and statistical results after processing data and utilising three models Logistic Regression, Random Forest, and XGBoost in R Programming or R language.
+This project is implemented to analyse which variables in the ecommerce dataset have strong effect on the customer's churn situation. Through the analysing procedures, there are some interesting dectections of attributes and statistical results after processing data and utilising three models Logistic Regression, Random Forest, and XGBoost in R Programming or R language. The project aims to help businesses shift from a passive to a proactive approach to customer retention, in another word is Proactive Retention.
 
 ## The structure of churned-prediction-using-r project
 ```
@@ -36,3 +36,20 @@ This project is implemented to analyse which variables in the ecommerce dataset 
 > Predict the ability of customer churn based on behavioral, demographic, transactional features to detect which factor has the most effect on this ability through using machine learning models such as Logistic Regression, Random Forest, and XGBoost on R language.
 
 ## Features
+1. Core Libraries
+   - tidyverse: data manipulation
+   - caret: machine learning (ML) framework
+   - pROC, VIM, car, ggcorrplot, RANN, scales
+   - xgboost
+2. Data Cleaning
+   - Handled some age outliers which have the abnormal values Age > 122 (because the highest age is recognised is 122), transfer them into N/A values and then use median method to impute them as missing values.
+   - Tackled the negative values of "Total_Purchase" by "**abs()**" to transfer the number from negative to positive values.
+   - Used kNN or k-Nearest Neighbors, which finds the very similar to values and choose the average of those values to fill in the missing value position.
+3. Exploratory Data Analysis - EDA
+   - Utilised "**ggplot**" library to illustrate the relationship between some variables versus "Churned".
+4. Machine Learning Models
+   - Logistic Regression: the base model to predict and find which is the most important model effect on churn situation, and received the ROC is 78%.
+   - Random Forest: applied the bagging technique to reduce overfitting of data, and received the ROC is 92.15%.
+   - XGBoost: the superb model using boosting technique to optimise the accuracy and the imbalanced data, and received the ROC is 92.48%.
+5. Business result
+The "Customer_Service_Calls", "Cart_Abandonment_Rate", "Lifetime_Value", "Discount_Usage_Rate" are the most important variables that business should monitor and prioritise for improvement. For along with, the business has to enhance the customer service through taking care them on the email platform to actively keep the customers.
