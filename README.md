@@ -48,8 +48,8 @@ This project is implemented to analyse which variables in the ecommerce dataset 
 3. Exploratory Data Analysis - EDA
    - Utilised "**ggplot**" library to illustrate the relationship between some variables versus "Churned".
 4. Machine Learning Models
-   - Logistic Regression: the base model to predict and find which is the most important model effect on churn situation, and received the ROC is 78%.
-   - Random Forest: applied the bagging technique to reduce overfitting of data, and received the ROC is 92.15%.
-   - XGBoost: the superb model using boosting technique to optimise the accuracy and the imbalanced data, and received the ROC is 92.48%.
+   - Logistic Regression: the base model to predict and find which is the most important model effect on churn situation, and received the ROC is **78%**.
+   - Random Forest: applied the bagging technique to reduce overfitting of data, and received the ROC is **92.15%**.
+   - XGBoost: the superb model using boosting technique to optimise the accuracy and the imbalanced data, and received the ROC is** 92.48%**.
 5. Business result
 The "Customer_Service_Calls", "Cart_Abandonment_Rate", "Lifetime_Value", "Discount_Usage_Rate" are the most important variables that business should monitor and prioritise for improvement. For along with, the business has to enhance the customer service through taking care them on the email platform to actively keep the customers.
