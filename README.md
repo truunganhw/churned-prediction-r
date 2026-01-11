@@ -42,9 +42,9 @@ This project is implemented to analyse which variables in the ecommerce dataset 
    - pROC, VIM, car, ggcorrplot, RANN, scales
    - xgboost
 2. Data Cleaning
-   - Handled some age outliers which have the abnormal values Age > 122 (because the highest age is recognised is 122), transfer them into N/A values and then use median method to impute them as missing values.
+   - Handled some age outliers which have the abnormal values Age > 122 (because the highest age recognised is 122), transfered them into N/A values and then used median method to impute them as missing values.
    - Tackled the negative values of "Total_Purchase" by "**abs()**" to transfer the number from negative to positive values.
-   - Used kNN or k-Nearest Neighbors, which finds the very similar to values and choose the average of those values to fill in the missing value position.
+   - Used kNN or k-Nearest Neighbors, which finds the very similar to values and choose the average of those values, to fill in the missing value position.
 3. Exploratory Data Analysis - EDA
    - Utilised "**ggplot**" library to illustrate the relationship between some variables versus "Churned".
 4. Machine Learning Models
