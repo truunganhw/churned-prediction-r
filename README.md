@@ -3,10 +3,10 @@ This project is implemented to analyse which variables in the dataset, which the
 
 ## The structure of churned-prediction-using-r project
 > Raw data
-> > Data processing 1: Abnormal values
+> > Data processing 1: Handle abnormal values
 > > > Exploratory Data Analysis (EDA)
 > > > > Split train - test data - trControl - cross validation
-> > > > > Data processing 2: Missing values (median, kNN method)
+> > > > > Data processing 2: Handle missing values (median, kNN method)
 > > > > > > Remove unecessary column
 > > > > > > > Transfer categorical data into factor
 > > > > > > > > Feature Engineering: Encoding & Scaling
