@@ -10,7 +10,7 @@ This project is implemented to analyse which variables in the ecommerce dataset 
 │       └── handle abnormal cases (age outliers, negative total purchases)
 │       └── split train - test - cross validation data
 │       └── tackle missing values (median method, kNN method, default values)
-│       └── remove uneccesary values
+│       └── remove an uneccesary variable
 │       └── transfer categorical data into factor values
 ├── models/                   
 │   ├── 01. feature engineering: encoding, scaling data
